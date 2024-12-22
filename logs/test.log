@@ -1,0 +1,17 @@
+2024-12-22 11:52:03,027 INFO | etl.extract | Starting to extract data...
+2024-12-22 11:52:03,041 INFO | etl.extract | Extracting completed.
+2024-12-22 11:52:03,041 INFO | etl.transform | Starting to transform data...
+2024-12-22 11:52:03,059 INFO | etl.transform | Transforming completed.
+2024-12-22 11:52:03,081 INFO | etl.load | Loading data to database...
+2024-12-22 11:52:03,544 INFO | etl.load | Loading completed.
+2024-12-22 11:52:03,544 INFO | database.execute_queries | Executing SQL files.
+2024-12-22 11:52:03,545 INFO | database.execute_queries | Executing SQL file: D:\Python\Inforce\Test-task\ETL-pipeline-task\sql\query_1.sql
+2024-12-22 11:52:03,549 INFO | database.execute_queries | Successfully executed.
+2024-12-22 11:52:03,550 INFO | database.execute_queries | Executing SQL file: D:\Python\Inforce\Test-task\ETL-pipeline-task\sql\query_2.sql
+2024-12-22 11:52:03,552 INFO | database.execute_queries | Successfully executed.
+2024-12-22 11:52:03,552 INFO | database.execute_queries | Executing SQL file: D:\Python\Inforce\Test-task\ETL-pipeline-task\sql\query_3.sql
+2024-12-22 11:52:03,554 INFO | database.execute_queries | Successfully executed.
+2024-12-22 11:52:03,554 INFO | database.execute_queries | Executing SQL file: D:\Python\Inforce\Test-task\ETL-pipeline-task\sql\query_4.sql
+2024-12-22 11:52:03,557 INFO | database.execute_queries | Successfully executed.
+2024-12-22 11:52:03,558 INFO | database.execute_queries | Executing SQL file: D:\Python\Inforce\Test-task\ETL-pipeline-task\sql\query_5.sql
+2024-12-22 11:52:03,561 INFO | database.execute_queries | Successfully executed.
