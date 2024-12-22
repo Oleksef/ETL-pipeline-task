@@ -1,9 +1,10 @@
-FROM python:${PYTHON_VERSION}
-LABEL authors="Oleksef"
+FROM python:3.10
+SHELL ["/bin/bash", "-l", "-c"]
 
-WORKDIR /ETL-pipeline-task
-COPY . /ETL-pipeline-task
+WORKDIR /app
 
-RUN pip install --no-cache-dir -r requirements.txt
+COPY . /app
 
-CMD ["python", "src/main.py"]
+RUN pip install --upgrade pip && pip install -r requirements.txt
+
+CMD ["python", './main']
