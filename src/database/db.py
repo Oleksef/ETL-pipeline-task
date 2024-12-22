@@ -27,7 +27,7 @@ def create_table():
                         user_id INTEGER PRIMARY KEY,
                         name VARCHAR(255) NOT NULL,
                         email VARCHAR(255) NOT NULL,
-                        signup_date TIMESTAMP NOT NULL,
+                        signup_date DATE NOT NULL,
                         domain VARCHAR(100) NOT NULL)
             """))
             logger.debug('Table "users" created.')

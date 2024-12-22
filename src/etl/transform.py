@@ -22,7 +22,7 @@ def transformer(data, save_to_csv=False):
     try:
         logger.info('Starting to transform data...')
 
-        data['signup_date'] = pd.to_datetime(data['signup_date']).dt.normalize()
+        data['signup_date'] = pd.to_datetime(data['signup_date']).dt.date
         logger.debug('Normalized datetime format.')
 
         # Checks if an email format is validated.
