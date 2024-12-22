@@ -19,7 +19,7 @@ def generator():
     try:
         fake = faker.Faker()
         data = pd.DataFrame()
-        for i in range(1, 1002):
+        for i in range(1, 10000):
             data.loc[i, 'user_id'] = i
             data.loc[i, 'name'] = fake.name()
             data.loc[i, 'email'] = random.choice((fake.free_email(), fake.email(), fake.domain_name()))
