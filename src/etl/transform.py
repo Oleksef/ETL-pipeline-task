@@ -25,8 +25,8 @@ def transformer(data, save_to_csv=False):
         data['signup_date'] = pd.to_datetime(data['signup_date']).dt.normalize()
         logger.debug('Normalized datetime format.')
 
-        # Only takes 3 domains because "Faker().free_email_domain()" consist of them.
-        invalid_email_indexes = data[(~data['email'].str.contains(r'.{5,}@(?:gmail|yahoo|hotmail)\.', regex=True))].index
+        # Checks if an email format is validated.
+        invalid_email_indexes = data[(~data['email'].str.contains(r'.{5,}@.+\..+[a-zA-Z]$', regex=True))].index
         data.drop(invalid_email_indexes, inplace=True)
         logger.debug('Filtered out invalid emails.')
 
